@@ -43,11 +43,6 @@ To run prediction:
 ```
 sharp predict -i /path/to/input/images -o /path/to/output/gaussians
 ```
-例如：使用项目中数据集/data/9J/images，并保存至/output/gaussians可运行：
-
-```
-sharp predict -i /path/to/data/9J/images -o /path/to/output/gaussians
-```
 
 The model checkpoint will be downloaded automatically on first run and cached locally at `~/.cache/torch/hub/checkpoints/`.
 
@@ -80,6 +75,28 @@ sharp render -i /path/to/output/gaussians -o /path/to/output/renderings
 
 Please refer to the paper for both quantitative and qualitative evaluations.
 Additionally, please check out this [qualitative examples page](https://apple.github.io/ml-sharp/) containing several video comparisons against related work.
+
+## 运行流程
+激活环境：
+```
+conda activate sharp
+```
+
+放置数据集：
+```
+/path/to/data/your_dataset_name/images
+```
+
+预测：
+```
+sharp predict -i /path/to/data/your_dataset_name/images -o /path/to/output/gaussians
+```
+
+渲染：
+```
+sharp render -i /path/to/output/gaussians -o /path/to/output/renderings
+```
+
 
 ## Citation
 
