@@ -38,6 +38,11 @@ To run prediction:
 ```
 sharp predict -i /path/to/input/images -o /path/to/output/gaussians
 ```
+例如：使用项目中数据集/data/9J/images，并保存至/output/gaussians可运行：
+
+```
+sharp predict -i /data0/yhji/ml-sharp-docker/data/9J/images -o /data0/yhji/ml-sharp-docker/output/gaussians
+```
 
 The model checkpoint will be downloaded automatically on first run and cached locally at `~/.cache/torch/hub/checkpoints/`.
 
