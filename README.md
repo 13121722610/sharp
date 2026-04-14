@@ -46,7 +46,7 @@ sharp predict -i /path/to/input/images -o /path/to/output/gaussians
 例如：使用项目中数据集/data/9J/images，并保存至/output/gaussians可运行：
 
 ```
-sharp predict -i /ml-sharp-docker/data/9J/images -o /ml-sharp-docker/output/gaussians
+sharp predict -i /path/to/data/9J/images -o /path/to/output/gaussians
 ```
 
 The model checkpoint will be downloaded automatically on first run and cached locally at `~/.cache/torch/hub/checkpoints/`.
@@ -74,12 +74,6 @@ sharp predict -i /path/to/input/images -o /path/to/output/gaussians --render
 
 # Or from the intermediate gaussians:
 sharp render -i /path/to/output/gaussians -o /path/to/output/renderings
-```
-
-例如：使用预测所生成的/output/gaussians，并将结果保存至/output/renderings，可运行：
-
-```
-sharp render -i /ml-sharp-docker/output/gaussians -o /ml-sharp-docker/output/renderings
 ```
 
 ## Evaluation
