@@ -71,6 +71,12 @@ sharp predict -i /path/to/input/images -o /path/to/output/gaussians --render
 sharp render -i /path/to/output/gaussians -o /path/to/output/renderings
 ```
 
+例如：使用预测所生成的/output/gaussians，并将结果保存至/output/renderings，可运行：
+
+```
+sharp render -i /data0/yhji/ml-sharp-docker/output/gaussians -o /data0/yhji/ml-sharp-docker/output/renderings
+```
+
 ## Evaluation
 
 Please refer to the paper for both quantitative and qualitative evaluations.
